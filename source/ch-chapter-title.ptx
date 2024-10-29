@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <chapter xml:id="ch-chapter-title" xmlns:xi="http://www.w3.org/2001/XInclude">
-  <title>Chapter Title</title>
+  <title>Week 1</title>
 
   <introduction>
-    <p> Text before the first section. </p>
+    <p> Logic is traditionally defined as the laws of though and correct reasoning and it is the basis of all mathematical reasoning. Logic has practical applications in computer science and in many other fields of study. This week we introduce <em>propositional logic</em>. Propositions are declarative statements that are either true and false, but not both. By combining propositional variables new propositions can be formed which are called compound propositions. Different compound propositions may have the same truth values in all possible cases. In  such a case we say they are equivalent. We also study the <em>propositional equivalences</em> this week. </p>
   </introduction>
 
-  <!-- include sections -->
-  <xi:include href="sec-section-name.ptx" />
+
+<!-- include sections -->
+<xi:include href="sec-propositional-logic.ptx" />
+<xi:include href="sec-propositional-equivalences.ptx" />
 
 </chapter>

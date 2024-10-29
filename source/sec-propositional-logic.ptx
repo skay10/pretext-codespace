@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-propositional-logic" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Propositional Logic</title>
+
+  <p> A <term>proposition</term> is a declarative statement which is either true or false, but not both. </p>
+
+  <example>
+    <p> "Today is Wednesday." is a proposition, whereas "Be careful!" is not. What about: <me> x + 5 = 7 </me> </p>
+  </example>
+
+  <p> In <term>propositional logic</term> (which is also called <term>propositional calculus</term>) the variables are propositions. We denote the <term>propositional variables</term> by the letters: <m>p, q, r, s,\dots</m> Given a proposition <m>p</m>, we define its <term>negation</term> <m>\neg p</m> (read "<em>not</em> <m>p</m>") as the proposition which is (T)rue exactly when <m>p</m> is (F)alse. Accordingly, the <term>truth table</term> of the negation operator is as follows: <image source="negp-1.png" width="25%"/>
+  </p>
+
+  <p> The negation operator is an example of a <term>logical operator</term>. We can also form new propositions, called <term>compound propositions</term> from the <term>atomic propositions</term> <m>p, q,\dots</m> by using the <term>logical operators</term>. Those logical operators will be called <term>connectives</term>. For example the <term>conjunction</term> of the propositions <m>p</m> and <m>q</m>, denoted <m>p\land q</m> and read "<m>p</m> <em>and</em> <m>q</m>", is the proposition that is true exactly when both <m>p</m> and <m>q</m> are true: <image source="conj-1.png" width="40%"/> </p>
+
+  <question>
+    <statement>
+      What is the negation of the statement:
+      <q>
+	Zach blocks e-mails and texts from Jennifer.
+      </q>
+    </statement>
+    <answer>
+      <statement>
+	Try to observe that the statement
+	<q>
+	  Zach does not block e-mails <em>or</em> he does not block texts from Jennifer.
+	</q>
+	is true if and only if the given statement is false. 
+      </statement>
+    </answer>   
+  </question>
+
+  <p> The <term>disjunction</term> (also called the <term>inclusive or</term>) of the propositions <m>p</m> and <m>q</m>, denoted <m>p\lor q</m> and read "<m>p</m> <em>or</em> <m>q</m>", is the proposition that is false exactly when both <m>p</m> and <m>q</m> are false: <image source="disj-1.png" width="40%"/> </p>
+
+  <example>
+    <p> If <m>p</m> and <m>q</m> are the propositions <ul>
+    <li><m>p\colon</m> "A password must have at least three digits"</li>
+    <li><m>q\colon</m> "A password must be at least eight characters long"</li>
+    </ul>then their disjunction would be the statement:
+    <ul>
+    <li><m>p\lor q\colon</m> "A password must have at least three digits or be at least eight characters long"</li>
+    </ul></p>
+  </example>
+
+  <p> The <term>exclusive or</term> of the propositions <m>p</m> and <m>q</m>, denoted <m>p\oplus q</m>, is the proposition that is true when exactly one of <m>p</m> and <m>q</m> is true and is false otherwise: <image source="xor-1.png" width="40%"/> </p>
+
+  <example>
+    <p> If <m>p</m> and <m>q</m> are the statements <ul>
+    <li><m>p\colon</m> "Coffee comes with diner"</li>
+    <li><m>q\colon</m> "Tea comes with dinner"</li>
+    </ul>then their exclusive or would be the proposition:
+    <ul>
+    <li><m>p\oplus q\colon</m> "Coffee or tea comes with dinner"</li>
+    </ul></p>
+  </example>
+
+  <question>
+    <statement>
+      <p>
+	Let <m>p</m> and <m>q</m> be the propositions: <ul>
+	<li><m>p\colon</m> "You can pay using U.S. dollars"</li>
+	<li><m>q\colon</m> "You can pay using euros."</li>
+      </ul>
+      </p>
+      <p>
+	For the following statement, what is the intended meaning, <m>p\lor q</m> or <m>p\oplus q</m>:
+	<ul>
+	  <li>"You can pay using U.S. dollars or euros."</li>
+	</ul>
+      </p>
+    </statement>
+    <answer>
+      <statement>
+	We don't know. The intended meaning may be apparent within the context. Maybe it is not a problem if we pay partly U.S. dollars and partly euros as soon as the total amount is compensated or maybe it is an online transaction and we must pay the total amount at once either by choosing U.S. dollar or by choosing euro as the currency.
+      </statement>
+    </answer>   
+  </question>
+
+</section>
